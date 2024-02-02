@@ -110,6 +110,17 @@ int func1()
 - :r !command    在光标处插入shell指令的结果
 
 
+Fri Feb  2 07:35:07 PM CST 2024
+
+chapter01_像记事本一样使用vim
+chapter02_vim常用指令入门
+chapter03_vim高效操作初体验
+chapter04_深入了解4种模式
+chapter05_文件管理
+chapter06_更快地移动与跳转
+chapter07_寄存器的使用
+README.md
+Vim实用技巧.pdf
 
 [lab]
 """
@@ -119,13 +130,10 @@ Nice to meet you.
 How Are you.
 
 尝试使用最少的按键将下文还原回上文
- have dream.
-Have a good
-How you.
+I have dream.
+Have a good day.
+How are you.
 """
-
-
-
 
 2.4 改写插入
 - c{n}w : 改写(删除)光标后1(n)个词。比如c3w表示”cut 3 words“，
@@ -146,23 +154,22 @@ How you.
 ### 内容得到了删除，同时也自动地由普通模式转为了插入模式，可以直接
 ### 进行编辑。但是如果想执行删除以后继续保持普通模式，就可以使用
 ### 指令x。
-- {n}x : 删除光标处及其前面的1(n)个字符
-- {n}X : 删除光标后面的1(n)个字符
+- {n}x : 删除光标处及其后面的1(n)个字符
+- {n}X : 删除光标前面的1(n)个字符
 
 [lab]
 """
 删减下面的串从而得到上面串的效果（尽量使用最少按键）
 abc aaa bbb
-abc aaa bbb ccc ddd eee
-
+abc aaa bbb
 abc aaa ccc ddd eee
-abc aaa bbb ccc ddd eee
+abc aaa ccc ddd eee
 
 a aaa b ccc ddd e
-abc aaa bbb ccc ddd eee
+a aaa b ccc ddd e
 
 aba bb ddd eee
-abc aaa bbb ccc ddd eee
+aba bb ddd eee
 """
 
 
@@ -203,10 +210,9 @@ I'm working at home.
 How are you ?
 I'm fine.
 
-xxxxxxHave a good day.
-xxxxxxxxxxxxxxx
-He go apple to school .xxxxxxxxx
-How are xxxxx xxxxxx xxxxxx you ?
+Have a good day.
+He go apple to school.
+How are you ?
 """
 
 
